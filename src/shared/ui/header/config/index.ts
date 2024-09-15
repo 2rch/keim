@@ -1,23 +1,22 @@
-import homeIcon from "../../../assets/header/home.svg";
-import loginIcon from "../../../assets/header/login.svg";
-import logoutIcon from "../../../assets/header/logout.svg";
-
 export const leftHeaderButtons = [
   {
-    title: "header.home",
-    icon: homeIcon,
-    link: "/",
+    title: "header.history",
+    link: "/history",
+  },
+  {
+    title: "header.advantages",
+    link: "/advantages",
+  },
+  {
+    title: "header.buildings",
+    link: "/buildings",
+  },
+  {
+    title: "header.service",
+    link: "/service",
+  },
+  {
+    title: "header.contacts",
+    link: "/contacts",
   },
 ];
-
-export const loginButton = {
-  title: "header.login",
-  icon: loginIcon,
-  link: "/login",
-};
-
-export const logoutButton = {
-  title: "header.logout",
-  icon: logoutIcon,
-  link: "/logout",
-};

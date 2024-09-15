@@ -1,6 +1,6 @@
 import React from "react";
-import mainLogo from "../../../../assets/logo.png";
-import "./index.css";
+import mainLogo from "../../../../assets/header/img.png";
+import "./index.scss";
 
 export const HeaderLogo = () => (
   <a href={"/"}>

@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { Header } from "../../header";
 import { Footer } from "../../footer";
 import "./index.scss";
+import { SideMenu } from "../../side-menu";
 
 interface PageLayoutProps {
   className: string;
@@ -13,9 +14,14 @@ export const PageLayout = (props: PageLayoutProps) => {
   return (
     <>
       <main className={clsx("main", className)}>
-        <Header />
-        {children}
-        <Footer />
+        <div className={"page-wrapper"}>
+          <Header />
+          <div className={"content-wrapper"}>
+            <SideMenu />
+            <div className={"page-content"}>{children}</div>
+          </div>
+          <Footer />
+        </div>
       </main>
     </>
   );

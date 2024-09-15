@@ -1,0 +1,30 @@
+@import "../../../../styles/helpers/variables";
+
+.side-menu-button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  border: solid $accent-color 1px;
+  justify-content: space-between;
+  transition: all 0.5s;
+  background: $main-color;
+}
+
+.side-menu-button:hover {
+  background: $accent-color;
+  transition: all 0.5s;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: $text-main-color;
+}
+
+.side-menu {
+  background: $main-color;
+}
+
+.side-menu a:hover {
+  color: $text-accent-color;
+}
