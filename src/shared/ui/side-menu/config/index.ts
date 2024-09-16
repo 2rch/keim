@@ -1,3 +1,5 @@
+import menuImage from "../../../assets/side-menu/img.png";
+
 export const menuItems = [
   {
     title: "sidemenu.paint-system",
@@ -28,3 +30,14 @@ export const menuItems = [
     link: "/catalogue",
   },
 ];
+
+export const menuPicture = {
+  img: menuImage,
+  link: "https://www.youtube.com/watch?v=RCxBsFk3x6I&feature=youtu.be",
+  placeholder: "sidemenu.picture.placeholder",
+};
+
+export const lastMenuItem = {
+  title: "sidemenu.tech",
+  link: "https://www.youtube.com/watch?v=RCxBsFk3x6I&feature=youtu.be",
+};

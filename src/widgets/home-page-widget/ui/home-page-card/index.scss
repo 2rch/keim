@@ -1,0 +1,28 @@
+@import "src/shared/styles/helpers/variables";
+
+.home-page-card {
+  font-weight: normal;
+  margin: 5px;
+}
+
+.home-page-card-title {
+  font-size: large;
+  padding: 10px;
+  border-bottom: 1px solid $accent-color;
+}
+
+.home-page-card-content {
+  display: flex;
+  margin: 10px;
+
+}
+
+.home-page-card-content-text {
+  text-align: left;
+  width: 80%;
+}
+
+.home-page-card-content-image {
+  border: 1px solid $accent-color;
+  width: 12%;
+}
