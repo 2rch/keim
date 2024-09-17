@@ -1,0 +1,22 @@
+@import "src/shared/styles/helpers/variables";
+
+.adv-page-widget {
+  font-weight: normal;
+}
+
+.adv-page-title {
+  font-size: large;
+  padding: 10px;
+  border-bottom: 1px solid $accent-color
+}
+
+.adv-page-widget .list-element {
+  margin: 10px;
+  text-align: left;
+}
+
+.adv-page-widget .list-element-title {
+  font-weight: bold;
+  display: list-item;
+  margin: 10px;
+}

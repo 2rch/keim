@@ -1,0 +1,16 @@
+@import "src/shared/styles/helpers/variables";
+
+.build-card {
+  flex: 0 0 31.5%;
+  padding: 5px;
+}
+
+.build-card-image {
+  width: 100%;
+  height: 175px;
+  border: 1px solid $accent-color;
+}
+
+.build-card-title {
+  margin: 5px;
+}
