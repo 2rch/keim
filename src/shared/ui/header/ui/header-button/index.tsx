@@ -8,14 +8,20 @@ interface HeaderButtonProps {
   additionalClass?: string;
 }
 
-export const HeaderButton = (props: HeaderButtonProps) => {
+export const HeaderButton = ({
+  title,
+  link,
+  additionalClass,
+}: HeaderButtonProps) => {
   const { t } = useTranslation();
+  const currentLink = window.location.pathname;
+  console.log(currentLink, link);
+  const styleClass = `header-button ${additionalClass ?? ""} ${
+    currentLink === link && "selected"
+  }`;
   return (
-    <a
-      className={`header-button ${props.additionalClass ?? ""}`}
-      href={props.link}
-    >
-      <div className={"header-button-text"}>{t(props.title)}</div>
+    <a className={styleClass} href={link}>
+      <div className={"header-button-text"}>{t(title)}</div>
     </a>
   );
 };

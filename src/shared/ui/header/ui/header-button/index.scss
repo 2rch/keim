@@ -10,6 +10,12 @@
     background: $accent-color;
 }
 
+.header-nav .selected {
+    background: $main-color;
+    color: $text-main-color;
+    transition: all 0.5s;
+}
+
 .header-button:hover {
     background: $main-color;
     transition: all 0.5s;
