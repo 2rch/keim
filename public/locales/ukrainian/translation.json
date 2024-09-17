@@ -122,6 +122,8 @@
   "buildings.title17": "Національний Академічний театр Опери та Балета (Одеса)",
   "buildings.title18": "Палац Потоцьких (Львів)",
 
+  "service.title": "Сервіс KEIM",
+
   "footer.title": "KEIM.COM.UA © 2013-{{currentYear}}",
   "footer.rights": "Всі права захищено"
 }
