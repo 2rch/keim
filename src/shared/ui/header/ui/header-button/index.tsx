@@ -15,7 +15,6 @@ export const HeaderButton = ({
 }: HeaderButtonProps) => {
   const { t } = useTranslation();
   const currentLink = window.location.pathname;
-  console.log(currentLink, link);
   const styleClass = `header-button ${additionalClass ?? ""} ${
     currentLink === link && "selected"
   }`;
