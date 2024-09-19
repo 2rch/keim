@@ -5,6 +5,7 @@ import { HistoryPage } from "../../pages/history-page";
 import { AdvantagesPage } from "../../pages/advantages-page";
 import { BuildingsPage } from "../../pages/buildings-page";
 import { ServicePage } from "../../pages/service-page";
+import { ContactsPage } from "../../pages/contacts-page";
 
 export const Routing = () => {
   return (
@@ -13,6 +14,7 @@ export const Routing = () => {
       <Route path={"/advantages"} element={<AdvantagesPage />} />
       <Route path={"/buildings"} element={<BuildingsPage />} />
       <Route path={"/service"} element={<ServicePage />} />
+      <Route path={"/contacts"} element={<ContactsPage />} />
       <Route path={"*"} element={<HomePage />} />
     </Routes>
   );

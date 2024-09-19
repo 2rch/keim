@@ -124,6 +124,9 @@
 
   "service.title": "Сервіс KEIM",
 
+  "contacts.title": "Контакти",
+  "contacts.map-link": "Переглянути збільшену карту",
+
   "footer.title": "KEIM.COM.UA © 2013-{{currentYear}}",
   "footer.rights": "Всі права захищено"
 }

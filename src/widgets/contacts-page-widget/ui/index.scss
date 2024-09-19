@@ -1,0 +1,28 @@
+@import "src/shared/styles/helpers/variables";
+
+.contacts-page-widget {
+  font-weight: normal;
+}
+
+.contacts-page-widget-title {
+  font-size: large;
+  padding: 10px;
+  border-bottom: 1px solid $accent-color;
+}
+
+.contacts-page-widget-topic {
+  font-size: large;
+  padding: 10px;
+  margin: 10px;
+  border-top: 2px solid $accent-color;
+  border-bottom: 2px solid $accent-color;
+}
+
+.contacts-page-widget-map {
+  margin: 5px;
+}
+
+.contacts-page-widget-map-link {
+  text-align: left;
+  margin: 10px 10px 10px 15%;
+}
