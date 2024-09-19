@@ -2,12 +2,13 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { ServiceList } from "./service-list";
 import "./index.scss";
+import { PageTitle } from "../../../shared/ui/page-title";
 
 export const ServicePageWidget = () => {
   const { t } = useTranslation();
   return (
     <div className={"service-page-widget"}>
-      <div className={"service-page-widget-title"}>{t("service.title")}</div>
+      <PageTitle title={t("service.title")} />
       <div className={"service-page-widget-text"}>
         Сервіс офіційного представника <b>Keimfarben GmbH</b> в Україні включає:
       </div>

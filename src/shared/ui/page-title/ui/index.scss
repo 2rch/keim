@@ -1,0 +1,7 @@
+@import "src/shared/styles/helpers/variables";
+
+.page-title {
+  font-size: large;
+  padding: 10px;
+  border-bottom: 1px solid $accent-color;
+}

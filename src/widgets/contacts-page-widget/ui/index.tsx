@@ -3,12 +3,13 @@ import { useTranslation } from "react-i18next";
 import { ContactsBlock } from "./contacts-block";
 import { mapEmbedLink, mapLink } from "../config";
 import "./index.scss";
+import { PageTitle } from "../../../shared/ui/page-title";
 
 export const ContactsPageWidget = () => {
   const { t } = useTranslation();
   return (
     <div className={"contacts-page-widget"}>
-      <div className={"contacts-page-widget-title"}>{t("contacts.title")}</div>
+      <PageTitle title={t("contacts.title")} />
       <div className={"contacts-page-widget-topic"}>
         Придбати продукцію <b>Keim®</b> в Україні Ви можете у компанії-партнера
         виробника <b>Keimfarben</b> GmbH за адресою:

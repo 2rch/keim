@@ -139,6 +139,133 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
         </>
       );
+    case 4:
+      return (
+        <>
+          <div className={"list-generator-title"}>
+            {t("concrete-repair.article-title3")}
+          </div>
+          <div className={"list-generator-content"}>
+            <p>
+              швидкодіючий водний очищувач <b>KEIM Betonschnellreiniger</b>,
+              усуває залишки опалубних масел, видаляє жирні та маслянисті плями
+              з бетонних та штукатурних поверхонь.
+            </p>
+          </div>
+        </>
+      );
+    case 5:
+      return (
+        <>
+          <div className={"list-generator-title"}>
+            {t("concrete-repair.article-title4")}
+          </div>
+          <div className={"list-generator-content"}>
+            <p>
+              мінеральний антикорозійний захист та адгезійний міст{" "}
+              <b>KEIM Concretal®-MKH</b>, забезпечує надійне зчеплення арматури
+              та бетонної основи з <b>KEIM Concretal®-Mörtel-R</b>.
+            </p>
+            <p>
+              грубо/фракційна PCC I-II суміш <b>KEIM Concretal®-Mörtel-R</b>,
+              застосовується для ремонту бетону в інженерному, мостовому та
+              висотному будівництві.
+            </p>
+            <p>
+              тонко/фракційна шпаклювальна ремонтна PCCII суміш{" "}
+              <b>KEIM Concretal®-Feinspachtel</b>, служить для вирівнювання
+              ремонтних місць, заповнення лунок і каверн.
+            </p>
+            <p>
+              дисперсійна добавка <b>KEIM Concretal®-Spezialvergütung</b>,
+              покращує адгезійні та технологічні властивості{" "}
+              <b>KEIM Concretal®-Feinspachtel</b>.
+            </p>
+            <p>
+              універсальна ремонтна суміш{" "}
+              <b>KEIM Concretal®-Universalmörtel-S</b>, з інтегрованим
+              антикорозійним захистом та адгезійним мостом. Застосовується у
+              висотному будівництві.
+            </p>
+            <p>
+              легка мінеральна штукатурка <b>KEIM Porosil®-Leichtputz</b>{" "}
+              спеціально розроблена для пористих теплозберігаючих мінеральних
+              будівельних матеріалів.
+            </p>
+            <p>
+              шпаклювальна маса <b>KEIM Leichtspachtel</b> застосовується для
+              вирівнювання поверхонь пористого бетону під фарбування{" "}
+              <b>KEIM Porosil®-Farbe</b>.
+            </p>
+          </div>
+        </>
+      );
+    case 6:
+      return (
+        <>
+          <div className={"list-generator-title"}>
+            {t("concrete-repair.article-title5")}
+          </div>
+          <div className={"list-generator-content"}>
+            <p>
+              криюча золь силікат/акрилова фарба <b>KEIM Concretal®-C</b>{" "}
+              забезпечує надійний захист бетону від карбонатизації, впливу СО2,
+              хлоридів та атмосферних факторів.
+            </p>
+            <p>
+              золь силікатна фарба, що криє <b>KEIM Concretal®-W</b>,
+              водовідштовхувальна, має дуже хорошу паропроникність, забезпечує
+              чудовий захист від хлоридів.
+            </p>
+            <p>
+              <b>KEIM Concretal®-W-Grob</b> наповнений варіант фарби{" "}
+              <b>KEIM Concretal®-W</b>, перекриває волосяні тріщини в основі,
+              вирівнює структуру бетонної поверхні.
+            </p>
+            <p>
+              золь силікатна блакит <b>KEIM Concretal®-Lasur</b>, призначена
+              для захисного забарвлення, що криє, і вирівнювання бетонних
+              поверхонь по тону в техніці лесування.
+            </p>
+            <p>
+              <b>KEIM Concretal®-Fixativ</b> розріджувач для продуктів{" "}
+              <b>KEIM Concretal®-W</b>, <b>KEIM Concretal®-W-Grob</b> та{" "}
+              <b>KEIM Concretal®-Lasur</b>.
+            </p>
+            <p>
+              розріджувач <b>KEIM Concretal®-Base</b>, при додаванні певної
+              кількості в <b>KEIM Concretal®-Lasur</b> забезпечує необхідний
+              лесирующий ефект захисного покриття.
+            </p>
+            <p>
+              гідрофобізатор по бетону <b>KEIM Silan-100</b> може
+              використовуватися самостійно і як водовідштовхувальна грунтовка
+              для <b>KEIM Concretal®-W</b>, <b>KEIM Concretal®-W-Grob</b> та{" "}
+              <b>KEIM Concretal®-Lasur</b>.
+            </p>
+            <p>
+              водонепроникна ґрунтовка <b>KEIM Silangrund</b>, застосовується
+              перед нанесенням силікатних фарб <b>KEIM</b> на бетон (у тому
+              числі і пористий).
+            </p>
+            <p>
+              криюча силікатна фарба KEIM Porosil® служить для фарбування та
+              захисту пористого бетону, так само може наноситься на покриття{" "}
+              <b>KEIM Porosil®-Strukturbeschichtung</b> як фінішний шар.
+            </p>
+            <p>
+              силікатне захисне структурне покриття{" "}
+              <b>KEIM Porosil®-Strukturbeschichtung</b>, призначене для
+              вирівнювання кольорового нанесення на необроблений пористий бетон.
+            </p>
+            <p>
+              ґрунтувальний засіб та розріджувач{" "}
+              <b>KEIM Porosil®-Verdünnung</b> входить до складу фарбувальних
+              систем, призначених для захисту пористого бетону.
+            </p>
+          </div>
+        </>
+      );
     default:
       return <></>;
   }
