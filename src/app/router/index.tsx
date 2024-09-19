@@ -10,6 +10,7 @@ import { PaintSystemPage } from "../../pages/paint-system-page";
 import { ConcreteRepairPage } from "../../pages/concrete-repair-page";
 import { PlasterPage } from "../../pages/plaster-page";
 import { RockRestorationPage } from "../../pages/rock-restoration-page";
+import { CreativeDesignPage } from "../../pages/creative-design-page";
 
 export const Routing = () => {
   return (
@@ -23,6 +24,7 @@ export const Routing = () => {
       <Route path={"/concrete-repair"} element={<ConcreteRepairPage />} />
       <Route path={"/plaster"} element={<PlasterPage />} />
       <Route path={"/rock-restoration"} element={<RockRestorationPage />} />
+      <Route path={"/creative-design"} element={<CreativeDesignPage />} />
       <Route path={"*"} element={<HomePage />} />
     </Routes>
   );

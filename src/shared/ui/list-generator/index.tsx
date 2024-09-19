@@ -497,7 +497,168 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
         </>
       );
+    case 12:
+      return (
+        <>
+          <div className={"list-generator-title"}>
+            {t("creative-design.article-title4")}
+          </div>
+          <div className={"list-generator-content"}>
+            <p>
+              класична гладка шпаклівка <b>KEIM Stucco®-Classico</b> на основі
+              натурального болотного вапна, призначена для індивідуального
+              оформлення внутрішніх приміщень (кольорова).
+            </p>
+            <p>
+              вирівнююча фарба-грунт на базі золь-силікату та рідкого скла{" "}
+              <b>KEIM Stucco®-Primo</b>, забезпечує адгезію{" "}
+              <b>KEIM Stucco-Fondo</b> та <b>KEIM Stucco-Classico</b> до
+              проблемних основ (колір: білий).
+            </p>
+            <p>
+              шпаклювальна маса <b>KEIM Stucco®-Fondo</b> на основі
+              натурального болотного вапна, служить для шпаклювання проблемних
+              підстав перед нанесенням <b>KEIM Stucco-Classico</b> (колір:
+              білий).
+            </p>
+            <p>
+              спеціальне мило <b>KEIM Stucco-Sapone®</b> може застосовуватися
+              для інтенсифікації колірного тону та контрасту кольорової
+              шпаклівки <b>KEIM Stucco-Classico®</b>.
+            </p>
+            <p>
+              набір <b>KEIM Stucco®-Sortiment im Holzkoffer</b>, складається з
+              усіх продуктів системи <b>Stucco-System</b> та інструментів для їх
+              нанесення (упакована в дерев&apos;яну валізку).
+            </p>
+            <p>
+              Набір <b>KEIM Stucco®-Kellen</b> складається з високоякісних
+              інструментів - кельм з нержавіючої сталі (упакована в
+              дерев&apos;яну валізку).
+            </p>
+          </div>
+        </>
+      );
+    case 13:
+      return (
+        <>
+          <div className={"list-generator-title"}>
+            {t("creative-design.article-title5")}
+          </div>
+          <div className={"list-generator-content"}>
+            <p>
+              Високоякісні виключно силікатні фарби <b>KEIM Künstlerfarben®</b>
+              , надзвичайно стійкі, призначені для живопису зовні та всередині у
+              кривій та напівпрозорій техніці.
+            </p>
+            <p>
+              мінеральний склад на базі вапна та білого цементу{" "}
+              <b>KEIM Malgrundmasse®</b>, що містить у своєму складі
+              натуральний мармуровий відсів, є ідеальною основою для{" "}
+              <b>KEIM Künstlerfarben</b>.
+            </p>
+            <p>
+              закріплювач <b>KEIM Fixiermittel®</b> на базі силікату калію
+              служить для фіксації готових фрагментів живопису, виконаних
+              фарбами <b>KEIM Künstlerfarben</b>.
+            </p>
+            <p>
+              розпилювач <b>KEIM Mundstaubspritze®</b> служить для нанесення{" "}
+              <b>KEIM Fixiermittel</b> на готові фрагменти живопису.
+            </p>
+            <p>
+              набір фарб для живопису та інструменту для їх нанесення{" "}
+              <b>KEIM Künstlerfarben®-Sortiment</b> (упакована в дерев&apos;яну
+              валізку).
+            </p>
+            <p>
+              кольоровий порошок – компонент виключно силікатної фарби{" "}
+              <b>KEIM Dekorfarbpulver®</b> для декоративного живопису зовні та
+              всередині у кривій та напівпрозорій техніці.
+            </p>
+            <p>
+              чистий, рідкий силікат калію <b>KEIM Fixativ®</b>, застосовується
+              як ґрунтовка, добавка та розріджувач для{" "}
+              <b>KEIM Dekorfarbpulver</b>.
+            </p>
+            <p>
+              набір фарб для живопису та інструменту для їх нанесення{" "}
+              <b>KEIM Dekorfarben®-Sortiment</b> (упакована в дерев&apos;яну
+              валізку).
+            </p>
+          </div>
+        </>
+      );
+    case 14:
+      return (
+        <>
+          <div className={"list-generator-title"}>
+            {t("creative-design.article-title6")}
+          </div>
+          <div className={"list-generator-content"}>
+            <p>
+              неорганічні крейди <b>KEIM Silikat-Kreiden®</b>, кольорові,
+              служать для виконання креативного живопису з мінеральних основ.
+            </p>
+            <p>
+              закріплювач <b>KEIM Silikat-Kreiden®-Fixativ</b> на базі рідкого
+              калійного скла, служить фіксатором готового живопису на основах,
+              що сильно вбирають.
+            </p>
+            <p>
+              закріплювач <b>KEIM Silikat-Kreiden®-Unifix</b> на базі рідкого
+              калійного скла, служить фіксатором готового живопису на основах,
+              що не вбирають або слабо вбирають.
+            </p>
+          </div>
+        </>
+      );
+    case 15:
+      return (
+        <>
+          <div className={"list-generator-title"}>
+            {t("creative-design.article-title3")}
+          </div>
+          <div className={"list-generator-content"}>
+            <p>
+              золь-силікатна концентрована кольорова фарба-блакит{" "}
+              <b>KEIM Design®-Lasur</b>, призначена для декоративного
+              оформлення фасадів та інтер&apos;єрів.
+            </p>
+            <p>
+              безбарвна добавка <b>KEIM Design®-Base</b> на основі
+              золь-силікату, призначена для розведення блакиті{" "}
+              <b>KEIM Design-Lasur</b> до необхідного ступеня прозорості.
+            </p>
+            <p>
+              ґрунтувальний засіб - добавка <b>KEIM Design®-Fixativ</b> на
+              основі золь-силікату, служить для ґрунтування та розведення
+              блакиті <b>KEIM Design-Lasur</b> до необхідного ступеня
+              прозорості.<b>KEIM Design-Lasur</b> до необходимой степени
+              прозрачности.{" "}
+            </p>
+            <p>
+              набір лазурів, добавок та інструментів для їх нанесення{" "}
+              <b>KEIM Design-Lasur-Sortiment</b> (упакована в дерев&apos;яну
+              валізку).
+            </p>
+          </div>
+        </>
+      );
     default:
       return <></>;
   }
 };
+
+// Example case
+/*case n:
+       return (
+         <>
+           <div className={"list-generator-title"}>
+             {t("concrete-repair.article-title3")}
+           </div>
+           <div className={"list-generator-content"}>
+             <p></p>
+           </div>
+         </>
+       );*/
