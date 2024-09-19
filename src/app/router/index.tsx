@@ -8,6 +8,7 @@ import { ServicePage } from "../../pages/service-page";
 import { ContactsPage } from "../../pages/contacts-page";
 import { PaintSystemPage } from "../../pages/paint-system-page";
 import { ConcreteRepairPage } from "../../pages/concrete-repair-page";
+import { PlasterPage } from "../../pages/plaster-page";
 
 export const Routing = () => {
   return (
@@ -19,6 +20,7 @@ export const Routing = () => {
       <Route path={"/contacts"} element={<ContactsPage />} />
       <Route path={"/paint-system"} element={<PaintSystemPage />} />
       <Route path={"/concrete-repair"} element={<ConcreteRepairPage />} />
+      <Route path={"/plaster"} element={<PlasterPage />} />
       <Route path={"*"} element={<HomePage />} />
     </Routes>
   );
