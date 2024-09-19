@@ -127,6 +127,13 @@
   "contacts.title": "Контакти",
   "contacts.map-link": "Переглянути збільшену карту",
 
+  "paint-system.title": "Фарбувальні системи KEIM",
+  "paint-system.article-title1": "ЕКОЛОГІЧНІСТЬ, ТЕХНОЛОГІЧНІСТЬ І ДОВГОВІЧНІСТЬ",
+  "paint-system.article-title2": "Фарбувальні системи KEIM",
+  "paint-system.article-title3": "1) фарби та фарбувальні системи зовнішнього застосування:",
+  "paint-system.article-title4": "2) інтер'єрні фарби та фарбувальні системи:",
+  "paint-system.article-title5": "3) зовнішні фарбувальні системи для деревини:",
+
   "footer.title": "KEIM.COM.UA © 2013-{{currentYear}}",
   "footer.rights": "Всі права захищено"
 }
