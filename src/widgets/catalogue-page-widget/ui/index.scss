@@ -1,0 +1,17 @@
+@import "src/shared/styles/helpers/variables";
+
+.catalogue-page-widget {
+  font-weight: normal;
+}
+
+.catalogue-page-widget-element {
+  text-align: left;
+  margin: 10px;
+  :visited {
+    color: $text-main-color
+  }
+}
+
+.catalogue-page-widget a {
+  text-decoration: none;
+}

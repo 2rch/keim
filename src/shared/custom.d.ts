@@ -34,3 +34,4 @@ declare module "*.webm" {
 }
 
 declare module "react-slick";
+declare module "list-react-files";
