@@ -4,7 +4,7 @@ export const searchByString = (
 ) => {
   const result: string[] = [];
   Object.keys(data).forEach((key) => {
-    if (data[key].toLowerCase().includes(string)) {
+    if (data[key].toLowerCase().includes(string.toLowerCase())) {
       result.push(key);
     }
   });

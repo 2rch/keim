@@ -10,7 +10,7 @@ export const SearchPageWidget = () => {
   return (
     <div className={"search-page-widget"}>
       <SearchInput value={search} setValue={setSearch} />
-      {search.length && <SearchView search={search} />}
+      {search.length !== 0 && <SearchView search={search} />}
     </div>
   );
 };
