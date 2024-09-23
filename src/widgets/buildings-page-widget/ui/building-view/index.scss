@@ -1,0 +1,12 @@
+@import "src/shared/styles/helpers/variables";
+
+.building-view {
+  font-weight: normal;
+  width: 98%;
+}
+
+.building-view-image {
+  width: inherit;
+  margin: 10px;
+  border: 1px solid $accent-color;
+}

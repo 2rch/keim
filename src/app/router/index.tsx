@@ -25,7 +25,7 @@ export const routes = [
     element: <AdvantagesPage />,
   },
   {
-    path: "buildings",
+    path: "/buildings",
     element: <BuildingsPage />,
   },
   {
