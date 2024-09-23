@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { PageTitle } from "../../../shared/ui/page-title";
 import { ArticleTitle } from "../../../shared/ui/article-title";
 import { ArticleParagraph } from "../../../shared/ui/article-paragraph";
@@ -24,21 +24,22 @@ export const CreativeDesignPageWidget = () => {
       <ArticleTitle title={t("creative-design.article-title1")} />
       <ArticleTitle title={t("creative-design.article-title2")} />
       <ArticleParagraph>
-        Фантазія людини не знає меж. Яскраві, неординарні особистості завжди
-        прагнули самовираження та індивідуальності практично у всіх сферах своєї
-        діяльності. Середовище – не виняток.
+        <Trans
+          i18nKey={"creative-design.paragraph1"}
+          components={{ b: <b /> }}
+        />
       </ArticleParagraph>
       <ArticleParagraph>
-        На сьогоднішній день креативне оформлення фасадів та інтер&apos;єрів
-        набуло дуже широкого поширення як за кордоном, так і в Україні. Фірма{" "}
-        <b>KEIMFARBEN GmbH & Co KG</b>, що володіє найпередовішими технологіями
-        з виробництва та застосування найкращих у світі силікатних будівельних
-        матеріалів, не могла залишитися осторонь цього процесу.
+        <Trans
+          i18nKey={"creative-design.paragraph2"}
+          components={{ b: <b /> }}
+        />
       </ArticleParagraph>
       <ArticleParagraph>
-        В результаті виник окремий напрямок виключно ексклюзивних, високоякісних
-        дизайнерських матеріалів для креативного оформлення на базі силікатів та
-        вапна.
+        <Trans
+          i18nKey={"creative-design.paragraph3"}
+          components={{ b: <b /> }}
+        />
       </ArticleParagraph>
       <ImageGallery srcList={firstImageList} />
       <ListGenerator listNumber={firstListId} />
@@ -48,10 +49,10 @@ export const CreativeDesignPageWidget = () => {
       <ImageGallery srcList={thirdImageList} />
       <ListGenerator listNumber={fourthListId} />
       <ArticleParagraph>
-        Висока якість, довговічність і багатогранність ексклюзивних систем{" "}
-        <b>KEIM</b> здатні дуже яскраво і неординарно підкреслити
-        індивідуальність і самобутність найсміливіших, креативних і талановитих
-        дизайнерських ідей.
+        <Trans
+          i18nKey={"creative-design.paragraph4"}
+          components={{ b: <b /> }}
+        />
       </ArticleParagraph>
     </div>
   );

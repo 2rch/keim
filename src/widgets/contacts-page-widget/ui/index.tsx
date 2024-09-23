@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { ContactsBlock } from "./contacts-block";
 import { mapEmbedLink, mapLink } from "../config";
 import "./index.scss";
@@ -11,8 +11,7 @@ export const ContactsPageWidget = () => {
     <div className={"contacts-page-widget"}>
       <PageTitle title={t("contacts.title")} />
       <div className={"contacts-page-widget-topic"}>
-        Придбати продукцію <b>Keim®</b> в Україні Ви можете у компанії-партнера
-        виробника <b>Keimfarben</b> GmbH за адресою:
+        <Trans i18nKey={"contacts.paragraph1"} components={{ b: <b /> }} />
       </div>
       <ContactsBlock />
       <div className={"contacts-page-widget-map"}>

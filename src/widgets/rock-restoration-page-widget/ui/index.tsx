@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { PageTitle } from "../../../shared/ui/page-title";
 import { ArticleTitle } from "../../../shared/ui/article-title";
 import { ArticleParagraph } from "../../../shared/ui/article-paragraph";
@@ -16,29 +16,26 @@ export const RockRestorationPageWidget = () => {
       <ArticleTitle title={t("rock-restoration.article-title1")} />
       <ArticleTitle title={t("rock-restoration.article-title2")} />
       <ArticleParagraph>
-        Розробка в 1878 році першої у світі виключно силікатної фарби спричинила
-        розвиток низки технічно обґрунтованих і принципово нових напрямків,
-        здатних забезпечити просування та лідерство торгової марки <b>KEIM</b>{" "}
-        не тільки як виробника високоякісних фарбувальних систем, але і як
-        надійного постачальника широкого спектру товарів та послуг в області
-        оздоблення, ремонту та реставрації фасадів будь-якого типу.
+        <Trans
+          i18nKey={"rock-restoration.paragraph1"}
+          components={{ b: <b /> }}
+        />
       </ArticleParagraph>
       <ArticleParagraph>
-        Один із цих напрямків був покликаний вирішувати питання пов&apos;язані з
-        реставрацією натурального каменю історичних фасадів та пам&apos;яток
-        архітектури. Асортиментний ряд <b>KEIMFARBEN GmbH & Co KG</b> серйозно
-        доповнився новими продуктами та системами, а партнери отримали
-        можливість застосування високотехнологічних якісних матеріалів під час
-        реставрації історичних будівель та споруд.
+        <Trans
+          i18nKey={"rock-restoration.paragraph2"}
+          components={{ b: <b /> }}
+        />
       </ArticleParagraph>
       <ListGenerator listNumber={firstListId} />
       <ImageGallery srcList={imageList} />
       <ListGenerator listNumber={secondListId} />
       <ListGenerator listNumber={thirdListId} />
       <ArticleParagraph>
-        Високотехнологічні реставраційні матеріали <b>KEIM</b> застосовуються в
-        усьому світі і давно вже стали синонімами таких як «якість»,
-        «надійність» і «ефективність».
+        <Trans
+          i18nKey={"rock-restoration.paragraph3"}
+          components={{ b: <b /> }}
+        />
       </ArticleParagraph>
     </div>
   );

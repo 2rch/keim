@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import {
   articleTitles,
   firstListId,
@@ -24,18 +24,10 @@ export const PaintSystemWidget = () => {
         <ArticleTitle key={article} title={t(article)} />
       ))}
       <ArticleParagraph>
-        Найперша силікатна фарба <b>KEIM</b> була винайдена та запатентована ще
-        у 1878 році. Всі наступні роки, аж до наших днів, продовжується розвиток
-        і вдосконалення унікальних силікатних технологій, спрямованих на
-        розробку та виробництво нових надійних та економічних систем фарбування,
-        здатних задовольнити постійно зростаючі запити світового будівельного
-        ринку.
+        <Trans i18nKey={"paint-system.paragraph1"} components={{ b: <b /> }} />
       </ArticleParagraph>
       <ArticleParagraph>
-        У процесі роботи виникла необхідність створення та просування історичних
-        вапняних фарб. У результаті, на сьогоднішній день виробнича програма
-        фірми <b>KEIMFARBEN GmbH & Co KG</b> насичена найрізноманітнішими
-        системами фарбування і технологіями їх застосування.
+        <Trans i18nKey={"paint-system.paragraph2"} components={{ b: <b /> }} />
       </ArticleParagraph>
       <ImageGallery srcList={imagesList1} />
       <ListGenerator listNumber={firstListId} />
@@ -43,11 +35,7 @@ export const PaintSystemWidget = () => {
       <ListGenerator listNumber={secondListId} />
       <ListGenerator listNumber={thirdListId} />
       <ArticleParagraph>
-        Всі без винятку фарби та фарбувальні системи <b>ТМ KEIM</b> відповідають
-        найвищим вимогам сучасного будівельного ринку, є надійними, екологічними
-        та довговічними. Крім того, фірма <b>KEIMFARBEN GmbH & Co KG</b> з
-        моменту свого створення і до сьогодні займає лідируючу позицію у світі
-        серед творців та виробників високоякісних силікатних фарб.
+        <Trans i18nKey={"paint-system.paragraph3"} components={{ b: <b /> }} />
       </ArticleParagraph>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import "./index.scss";
 
 interface ListGeneratorProps {
@@ -17,57 +17,70 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              двокомпонентна, виключно силікатна система{" "}
-              <b>KEIM Purkristalat</b>. Абсолютно мінеральна, дуже довговічна,
-              існують <b>об&apos;єкти, пофарбовані 125 років тому</b>.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              однокомпонентна, універсального застосування, вільна від дисперсії
-              силікатна фарба <b>KEIM Unikristalat</b>, найчастіше
-              застосовується для ремонту історичних об&apos;єктів.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              золь-силікатна система фарбування <b>KEIM Soldalit</b>, в першу
-              чергу служить для ремонту старих, у тому числі пофарбованих
-              органічними фарбами основ.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              дисперсійна, найпопулярніша та дуже економічна силікатна система{" "}
-              <b>KEIM Granital</b>. Переважна більшість об&apos;єктів{" "}
-              <b>KEIM</b> у світі забарвлена cаме цією системою.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силикатно-акрилова фарба <b>KEIM Teknosil</b>, застосовується для
-              фарбування плит з азбестцементу та фібробетону.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph5"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силікатна фарбувальна система <b>KEIM Novosil</b>, оснащена
-              вбудованим захистом від водоростей, грибків та плісняви, служить
-              для ремонту систем утеплення фасадів.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph6"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силікатна система <b>KEIM Сonсretal</b>, забезпечує лесируючу і
-              криючу захисне фарбування бетонних поверхонь.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph7"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силікатна система <b>KEIM Porosil</b>, розроблена для фарбування
-              та захисту пористого бетону, застосовується спільно зі
-              спеціальними штукатурками та шпаклювальними масами.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph8"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силікатна система для лісування <b>KEIM Design-Lasur</b>, служить
-              для реалізації різноманітних дизайнерських рішень. Має оригінальну
-              оптику.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph9"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силікатна блакит <b>KEIM Restauro-Lasur</b>, застосовується для
-              фарбування фасадів та в системі реставрації натурального каменю,
-              служить для вирівнювання поверхонь за тоном.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph10"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              вапняна фарбувальна система <b>KEIM Romanit</b>, базується на
-              болотяному вапні як мінімум трирічного гасіння. Історичні
-              об&apos;єкти, альтернативне будівництво.
+              <Trans
+                i18nKey={"paint-system.list1.paragraph11"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -80,46 +93,58 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              золь силікатна фарбувальна система <b>Keim Optil</b>, економічна,
-              стійка з чудовою покриваністю та численними насиченими тонами,
-              включаючи золотий.
+              <Trans
+                i18nKey={"paint-system.list2.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              золь силікатна ремонтна система фарбування <b>Keim Innotop</b>,
-              надійна, легко переробляється, екологічна.
+              <Trans
+                i18nKey={"paint-system.list2.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              дисперсійна силікатна система <b>Keim Biosil</b>, що перешкоджає
-              утворенню грибків та водоростей, безпечна для алергіків.
+              <Trans
+                i18nKey={"paint-system.list2.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              дисперсійна силікатна система <b>Keim Ecosil ME</b> забезпечує
-              активне фотокаталітичне поліпшення якості повітря в приміщеннях.
+              <Trans
+                i18nKey={"paint-system.list2.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              високоспеціалізована фарбувальна система <b>Keim Mycal</b>,
-              застосовується в приміщеннях вже уражених пліснявою, або там, де
-              існує небезпека її появи.
+              <Trans
+                i18nKey={"paint-system.list2.paragraph5"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силікатна система для реперезентативних та історичних приміщень{" "}
-              <b>Keim Quarzil</b>, виняткова якість, перешкоджає утворенню
-              конденсату та біоорганізмів.
+              <Trans
+                i18nKey={"paint-system.list2.paragraph6"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              оборотне покриття <b>Keim Reversil</b>, служить для консервації
-              історичних фресок та розпису, легко видаляється з поверхні, не
-              шкодить автентичним шарам забарвлення.
+              <Trans
+                i18nKey={"paint-system.list2.paragraph7"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силікатна система для лісування <b>KEIM Design-Lasur</b>, служить
-              для реалізації різноманітних дизайнерських рішень. Має оригінальну
-              оптику.
+              <Trans
+                i18nKey={"paint-system.list2.paragraph8"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              вапняна фарбувальна система <b>KEIM Athenit</b>, базується на
-              болотяному вапні як мінімум трирічного гасіння. Історичні
-              об&apos;єкти, екологічне будівництво.
+              <Trans
+                i18nKey={"paint-system.list2.paragraph9"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -132,9 +157,10 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              перша у світі силікатна фарбувальна система для деревини{" "}
-              <b>KEIM Lignosil</b>, що криє, має неперевершену довговічність і
-              виняткові захисні властивості.
+              <Trans
+                i18nKey={"paint-system.list3.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -147,9 +173,10 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              швидкодіючий водний очищувач <b>KEIM Betonschnellreiniger</b>,
-              усуває залишки опалубних масел, видаляє жирні та маслянисті плями
-              з бетонних та штукатурних поверхонь.
+              <Trans
+                i18nKey={"concrete-repair.list1.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -162,40 +189,46 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              мінеральний антикорозійний захист та адгезійний міст{" "}
-              <b>KEIM Concretal®-MKH</b>, забезпечує надійне зчеплення арматури
-              та бетонної основи з <b>KEIM Concretal®-Mörtel-R</b>.
+              <Trans
+                i18nKey={"concrete-repair.list2.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              грубо/фракційна PCC I-II суміш <b>KEIM Concretal®-Mörtel-R</b>,
-              застосовується для ремонту бетону в інженерному, мостовому та
-              висотному будівництві.
+              <Trans
+                i18nKey={"concrete-repair.list2.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              тонко/фракційна шпаклювальна ремонтна PCCII суміш{" "}
-              <b>KEIM Concretal®-Feinspachtel</b>, служить для вирівнювання
-              ремонтних місць, заповнення лунок і каверн.
+              <Trans
+                i18nKey={"concrete-repair.list2.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              дисперсійна добавка <b>KEIM Concretal®-Spezialvergütung</b>,
-              покращує адгезійні та технологічні властивості{" "}
-              <b>KEIM Concretal®-Feinspachtel</b>.
+              <Trans
+                i18nKey={"concrete-repair.list2.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              універсальна ремонтна суміш{" "}
-              <b>KEIM Concretal®-Universalmörtel-S</b>, з інтегрованим
-              антикорозійним захистом та адгезійним мостом. Застосовується у
-              висотному будівництві.
+              <Trans
+                i18nKey={"concrete-repair.list2.paragraph5"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              легка мінеральна штукатурка <b>KEIM Porosil®-Leichtputz</b>{" "}
-              спеціально розроблена для пористих теплозберігаючих мінеральних
-              будівельних матеріалів.
+              <Trans
+                i18nKey={"concrete-repair.list2.paragraph6"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              шпаклювальна маса <b>KEIM Leichtspachtel</b> застосовується для
-              вирівнювання поверхонь пористого бетону під фарбування{" "}
-              <b>KEIM Porosil®-Farbe</b>.
+              <Trans
+                i18nKey={"concrete-repair.list2.paragraph7"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -208,60 +241,70 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              криюча золь силікат/акрилова фарба <b>KEIM Concretal®-C</b>{" "}
-              забезпечує надійний захист бетону від карбонатизації, впливу СО2,
-              хлоридів та атмосферних факторів.
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              золь силікатна фарба, що криє <b>KEIM Concretal®-W</b>,
-              водовідштовхувальна, має дуже хорошу паропроникність, забезпечує
-              чудовий захист від хлоридів.
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              <b>KEIM Concretal®-W-Grob</b> наповнений варіант фарби{" "}
-              <b>KEIM Concretal®-W</b>, перекриває волосяні тріщини в основі,
-              вирівнює структуру бетонної поверхні.
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              золь силікатна блакит <b>KEIM Concretal®-Lasur</b>, призначена
-              для захисного забарвлення, що криє, і вирівнювання бетонних
-              поверхонь по тону в техніці лесування.
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              <b>KEIM Concretal®-Fixativ</b> розріджувач для продуктів{" "}
-              <b>KEIM Concretal®-W</b>, <b>KEIM Concretal®-W-Grob</b> та{" "}
-              <b>KEIM Concretal®-Lasur</b>.
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph5"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              розріджувач <b>KEIM Concretal®-Base</b>, при додаванні певної
-              кількості в <b>KEIM Concretal®-Lasur</b> забезпечує необхідний
-              лесирующий ефект захисного покриття.
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph6"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              гідрофобізатор по бетону <b>KEIM Silan-100</b> може
-              використовуватися самостійно і як водовідштовхувальна грунтовка
-              для <b>KEIM Concretal®-W</b>, <b>KEIM Concretal®-W-Grob</b> та{" "}
-              <b>KEIM Concretal®-Lasur</b>.
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph7"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              водонепроникна ґрунтовка <b>KEIM Silangrund</b>, застосовується
-              перед нанесенням силікатних фарб <b>KEIM</b> на бетон (у тому
-              числі і пористий).
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph8"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              криюча силікатна фарба KEIM Porosil® служить для фарбування та
-              захисту пористого бетону, так само може наноситься на покриття{" "}
-              <b>KEIM Porosil®-Strukturbeschichtung</b> як фінішний шар.
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph9"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силікатне захисне структурне покриття{" "}
-              <b>KEIM Porosil®-Strukturbeschichtung</b>, призначене для
-              вирівнювання кольорового нанесення на необроблений пористий бетон.
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph10"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              ґрунтувальний засіб та розріджувач{" "}
-              <b>KEIM Porosil®-Verdünnung</b> входить до складу фарбувальних
-              систем, призначених для захисту пористого бетону.
+              <Trans
+                i18nKey={"concrete-repair.list3.paragraph11"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -274,99 +317,106 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              силікатна, пігментована декоративна штукатурка{" "}
-              <b>KEIM Indusil®</b> для зовнішнього та внутрішнього
-              застосування, структурна, зернистість від 1 до 3 мм.
+              <Trans
+                i18nKey={"plaster.list1.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              вапняно-цементні легкі декоративні штукатурки{" "}
-              <b>
-                KEIM Brillantputz ® Rillenputz, KEIM Brillantputz ® Rauputz,
-                KEIM Brillantputz ® Glattputz
-              </b>
-              , структурні зернисті (2-5 мм) та гладка, пігментовані, для
-              зовнішнього застосування, у тому числі у складі систем утеплення
-              фасадів.
+              <Trans
+                i18nKey={"plaster.list1.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              штукатурний набризк-адгезійний міст{" "}
-              <b>KEIM Porosan®-Trass-Zementputz</b>, використовується в системі
-              сануючих штукатурок <b>KEIM Porosan®</b>.
+              <Trans
+                i18nKey={"plaster.list1.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              мінеральний шлам-вертикальна гідроізоляція{" "}
-              <b>KEIM Porosan®-Dichtungsschlämme</b> служить для захисту споруд
-              від впливу напірної та ненапірної вологи.
+              <Trans
+                i18nKey={"plaster.list1.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              системна штукатурка <b>KEIM Porosan®-Ausgleichsputz-NP</b>, що
-              вирівнює, застосовується на мінеральних, навантажених шкідливими
-              солями підставах.
+              <Trans
+                i18nKey={"plaster.list1.paragraph5"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              системні сануючі штукатурки{" "}
-              <b>KEIM Porosan®-Trass-Sanierputz-NP</b> та{" "}
-              <b>KEIM Porosan®-HF-Sanierputz</b>, використовуються для санації
-              вологих та навантажених солями мінеральних основ.
+              <Trans
+                i18nKey={"plaster.list1.paragraph6"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              вологорегулюючі штукатурки <b>KEIM Seccopor®-Maschinenputz</b> та{" "}
-              <b>KEIM Seccopor®-Handputz</b> машинного та ручного нанесення
-              відповідно, призначені для санації вологих приміщень.
+              <Trans
+                i18nKey={"plaster.list1.paragraph7"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              <b>KEIM Seccopor®-Feinputz</b> тонка, фінішна вологорегулююча
-              штукатурка в системі <b>KEIM Seccopor®</b>.
+              <Trans
+                i18nKey={"plaster.list1.paragraph8"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              тонкофракційна, вапняно-трасова штукатурка{" "}
-              <b>KEIM Deckputz®-historisch-Fein</b>, призначена для реставрації
-              історичних будівель та пам&apos;яток архітектури.
+              <Trans
+                i18nKey={"plaster.list1.paragraph9"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              грубофракційна, вапняно-трасова штукатурка{" "}
-              <b>KEIM Deckputz®-historisch-Grob</b>, призначена для реставрації
-              історичних будівель та пам&apos;яток архітектури.
+              <Trans
+                i18nKey={"plaster.list1.paragraph10"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              ремонтна, вапняно-цементна штукатурка <b>KEIM Universalputz®</b>,
-              що містить органічні добавки та армована волокном, служить для
-              ремонту та оштукатурювання фасадів.
+              <Trans
+                i18nKey={"plaster.list1.paragraph11"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              тонкофракційна, вапняно-цементна штукатурка{" "}
-              <b>KEIM Universalputz®-Fein</b>, що містить органічні добавки та
-              армована волокном, служить для ремонту та оштукатурювання фасадів.
+              <Trans
+                i18nKey={"plaster.list1.paragraph12"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              тонкофракційна вапняна штукатурка та міст зчеплення, призначена
-              для зовнішнього та внутрішнього застосування{" "}
-              <b>KEIM NHL-Kalkputz®-Fein</b>, застосовується в галузі
-              реставрації та альтернативному біологічному будівництві.
+              <Trans
+                i18nKey={"plaster.list1.paragraph13"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              грубофракційна вапняна штукатурка, призначена для зовнішнього та
-              внутрішнього застосування <b>KEIM NHL-Kalkputz®-Grob</b>,
-              застосовується в галузі реставрації та альтернативному
-              біологічному будівництві.
+              <Trans
+                i18nKey={"plaster.list1.paragraph14"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              гідроактивний вапняний шлам <b>KEIM Mycal®-Por</b>,
-              використовується у вологих внутрішніх приміщеннях, уражених
-              грибком та пліснявою. Може застосовуватися як клеючий склад і
-              шпаклівка для внутрішніх теплозберігаючих плит, має ефект
-              компенсації конденсаційної вологи.
+              <Trans
+                i18nKey={"plaster.list1.paragraph15"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              мінеральна легка штукатурка <b>KEIM Porosil®-Leichtputz</b> на
-              базі вапна, застосовується як старт та фініш при виконанні
-              зовнішніх та внутрішніх робіт з використанням високоефективних
-              утеплювальних матеріалів.
+              <Trans
+                i18nKey={"plaster.list1.paragraph16"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              стандартна вапняно-цементна штукатурка <b>KEIM Standardputz®</b>,
-              використовується як старт і фініш, зовні та всередині, у тому
-              числі і в областях підвищеної вологості.
+              <Trans
+                i18nKey={"plaster.list1.paragraph17"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -379,32 +429,34 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              силікатна шпаклівка <b>KEIM Spachtel®</b>, готова до застосування
-              для зовнішніх та внутрішніх робіт, служить для вирівнювання
-              поверхні штукатурок та бетонів, а також монтажу армуючих сіток.
+              <Trans
+                i18nKey={"plaster.list2.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              полегшена силікатна шпаклівка <b>KEIM Leichtspachtel®</b>, готова
-              до застосування для зовнішніх та внутрішніх робіт, служить для
-              вирівнювання поверхні штукатурок та бетонів, а також монтажу
-              армуючих сіток.
+              <Trans
+                i18nKey={"plaster.list2.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              Шпаклівка <b>KEIM LS-Pro®</b> призначена для внутрішнього
-              застосування, адаптована для повномасштабного нанесення апаратурою{" "}
-              <b>Airless</b>, чудово шліфується, рекомендована для біологічного
-              будівництва.
+              <Trans
+                i18nKey={"plaster.list2.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              готова до застосування внутрішня шпаклювальна маса{" "}
-              <b>KEIM Dolomitspachtel®</b>, розроблена для повномасштабного
-              шпаклювання штукатурок та бетонів, вирівнювання дефектних місць та
-              заповнення швів.
+              <Trans
+                i18nKey={"plaster.list2.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              екологічно чиста, вапняна шпаклівка для внутрішнього застосування{" "}
-              <b>KEIM Athenit®-fino</b> не містить синтетичних добавок та
-              розчинників.
+              <Trans
+                i18nKey={"plaster.list2.paragraph5"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -417,19 +469,22 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              натуральний, біологічно саморозкладний очисник-концентрат{" "}
-              <b>KEIM Steinreiniger®-N</b>, призначений для м&apos;якого
-              очищення каменю, цегли та бетону.
+              <Trans
+                i18nKey={"rock-restoration.list1.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              кремнійорганічний камнезміцнювач <b>KEIM Silex®-OH</b> забезпечує
-              зміцнення ослабленої структури натурального каменю (вміст діючої
-              речовини 75%).
+              <Trans
+                i18nKey={"rock-restoration.list1.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              кремнійорганічний камнезміцнювач <b>KEIM Silex®-OH-100</b>{" "}
-              забезпечує зміцнення ослабленої структури натурального каменю
-              (вміст діючої речовини 100%).
+              <Trans
+                i18nKey={"rock-restoration.list1.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -442,31 +497,34 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              суха реставраційна суміш <b>KEIM Restauro®-Grund</b>, що служить
-              для чорнового заповнення глибоких втрат на камені, є основою для{" "}
-              <b>KEIM Restauro®-Top</b> (коричневий колір).
+              <Trans
+                i18nKey={"rock-restoration.list2.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              суха реставраційна суміш <b>KEIM Restauro®-Top</b>, забезпечує
-              колірну та структурну відповідність доповнень оригінальної
-              поверхні каменю (кольорова, фінішна).
+              <Trans
+                i18nKey={"rock-restoration.list2.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              суха реставраційна суміш <b>KEIM Restauro®-Fuge</b>, служить для
-              заповнення шовного простору в історичних цегляних або
-              кам&apos;яних кладках (кольорова).
+              <Trans
+                i18nKey={"rock-restoration.list2.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              суха реставраційна суміш <b>KEIM Restauro®-Gieß</b>,
-              використовується для відливання копій кам&apos;яних елементів
-              декору або статуй у спеціальних формах (кольорова, рідкотекуча).
+              <Trans
+                i18nKey={"rock-restoration.list2.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              армуючі елементи із спеціальної нержавіючої сталі{" "}
-              <b>KEIM Armierungsmaterial ®V-4A-Stahl</b>, (дріт, прути та
-              кріпильні гвинти/шурупи), забезпечують надійне кріплення
-              свіжих/замішаних реставраційних матеріалів з вертикальних та
-              вертикальних поверхонь.
+              <Trans
+                i18nKey={"rock-restoration.list2.paragraph5"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -479,20 +537,22 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              силоксановий гідрофобізатор <b>KEIM Lotexan®-N</b> розроблений
-              спеціально для захисту натурального каменю від води та різних
-              забруднень.
+              <Trans
+                i18nKey={"rock-restoration.list3.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              тонкошарова золь-силікатна фарба-блакитник{" "}
-              <b>KEIM Restauro®-Lasur</b>, служить для лесирующего вирівнювання
-              за тоном відреставрованих ділянок та автентичної поверхні
-              натурального каменю.
+              <Trans
+                i18nKey={"rock-restoration.list3.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              ґрунтувальний засіб-розріджувач <b>KEIM Restauro®-Fixativ</b>,
-              застосовується для ґрунтування та розведення{" "}
-              <b>KEIM Restauro®-Lasur</b> до необхідного ступеня прозорості.
+              <Trans
+                i18nKey={"rock-restoration.list3.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -505,36 +565,40 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              класична гладка шпаклівка <b>KEIM Stucco®-Classico</b> на основі
-              натурального болотного вапна, призначена для індивідуального
-              оформлення внутрішніх приміщень (кольорова).
+              <Trans
+                i18nKey={"creative-design.list1.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              вирівнююча фарба-грунт на базі золь-силікату та рідкого скла{" "}
-              <b>KEIM Stucco®-Primo</b>, забезпечує адгезію{" "}
-              <b>KEIM Stucco-Fondo</b> та <b>KEIM Stucco-Classico</b> до
-              проблемних основ (колір: білий).
+              <Trans
+                i18nKey={"creative-design.list1.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              шпаклювальна маса <b>KEIM Stucco®-Fondo</b> на основі
-              натурального болотного вапна, служить для шпаклювання проблемних
-              підстав перед нанесенням <b>KEIM Stucco-Classico</b> (колір:
-              білий).
+              <Trans
+                i18nKey={"creative-design.list1.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              спеціальне мило <b>KEIM Stucco-Sapone®</b> може застосовуватися
-              для інтенсифікації колірного тону та контрасту кольорової
-              шпаклівки <b>KEIM Stucco-Classico®</b>.
+              <Trans
+                i18nKey={"creative-design.list1.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              набір <b>KEIM Stucco®-Sortiment im Holzkoffer</b>, складається з
-              усіх продуктів системи <b>Stucco-System</b> та інструментів для їх
-              нанесення (упакована в дерев&apos;яну валізку).
+              <Trans
+                i18nKey={"creative-design.list1.paragraph5"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              Набір <b>KEIM Stucco®-Kellen</b> складається з високоякісних
-              інструментів - кельм з нержавіючої сталі (упакована в
-              дерев&apos;яну валізку).
+              <Trans
+                i18nKey={"creative-design.list1.paragraph6"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -547,44 +611,52 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              Високоякісні виключно силікатні фарби <b>KEIM Künstlerfarben®</b>
-              , надзвичайно стійкі, призначені для живопису зовні та всередині у
-              кривій та напівпрозорій техніці.
+              <Trans
+                i18nKey={"creative-design.list2.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              мінеральний склад на базі вапна та білого цементу{" "}
-              <b>KEIM Malgrundmasse®</b>, що містить у своєму складі
-              натуральний мармуровий відсів, є ідеальною основою для{" "}
-              <b>KEIM Künstlerfarben</b>.
+              <Trans
+                i18nKey={"creative-design.list2.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              закріплювач <b>KEIM Fixiermittel®</b> на базі силікату калію
-              служить для фіксації готових фрагментів живопису, виконаних
-              фарбами <b>KEIM Künstlerfarben</b>.
+              <Trans
+                i18nKey={"creative-design.list2.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              розпилювач <b>KEIM Mundstaubspritze®</b> служить для нанесення{" "}
-              <b>KEIM Fixiermittel</b> на готові фрагменти живопису.
+              <Trans
+                i18nKey={"creative-design.list2.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              набір фарб для живопису та інструменту для їх нанесення{" "}
-              <b>KEIM Künstlerfarben®-Sortiment</b> (упакована в дерев&apos;яну
-              валізку).
+              <Trans
+                i18nKey={"creative-design.list2.paragraph5"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              кольоровий порошок – компонент виключно силікатної фарби{" "}
-              <b>KEIM Dekorfarbpulver®</b> для декоративного живопису зовні та
-              всередині у кривій та напівпрозорій техніці.
+              <Trans
+                i18nKey={"creative-design.list2.paragraph6"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              чистий, рідкий силікат калію <b>KEIM Fixativ®</b>, застосовується
-              як ґрунтовка, добавка та розріджувач для{" "}
-              <b>KEIM Dekorfarbpulver</b>.
+              <Trans
+                i18nKey={"creative-design.list2.paragraph7"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              набір фарб для живопису та інструменту для їх нанесення{" "}
-              <b>KEIM Dekorfarben®-Sortiment</b> (упакована в дерев&apos;яну
-              валізку).
+              <Trans
+                i18nKey={"creative-design.list2.paragraph8"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -597,18 +669,22 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              неорганічні крейди <b>KEIM Silikat-Kreiden®</b>, кольорові,
-              служать для виконання креативного живопису з мінеральних основ.
+              <Trans
+                i18nKey={"creative-design.list3.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              закріплювач <b>KEIM Silikat-Kreiden®-Fixativ</b> на базі рідкого
-              калійного скла, служить фіксатором готового живопису на основах,
-              що сильно вбирають.
+              <Trans
+                i18nKey={"creative-design.list3.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              закріплювач <b>KEIM Silikat-Kreiden®-Unifix</b> на базі рідкого
-              калійного скла, служить фіксатором готового живопису на основах,
-              що не вбирають або слабо вбирають.
+              <Trans
+                i18nKey={"creative-design.list3.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -621,26 +697,28 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              золь-силікатна концентрована кольорова фарба-блакит{" "}
-              <b>KEIM Design®-Lasur</b>, призначена для декоративного
-              оформлення фасадів та інтер&apos;єрів.
+              <Trans
+                i18nKey={"creative-design.list4.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              безбарвна добавка <b>KEIM Design®-Base</b> на основі
-              золь-силікату, призначена для розведення блакиті{" "}
-              <b>KEIM Design-Lasur</b> до необхідного ступеня прозорості.
+              <Trans
+                i18nKey={"creative-design.list4.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              ґрунтувальний засіб - добавка <b>KEIM Design®-Fixativ</b> на
-              основі золь-силікату, служить для ґрунтування та розведення
-              блакиті <b>KEIM Design-Lasur</b> до необхідного ступеня
-              прозорості.<b>KEIM Design-Lasur</b> до необходимой степени
-              прозрачности.{" "}
+              <Trans
+                i18nKey={"creative-design.list4.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              набір лазурів, добавок та інструментів для їх нанесення{" "}
-              <b>KEIM Design-Lasur-Sortiment</b> (упакована в дерев&apos;яну
-              валізку).
+              <Trans
+                i18nKey={"creative-design.list4.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -653,50 +731,52 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              кольорова силікатна фарба KEIM Lignosil®-Color, що криє,
-              забезпечує дуже тривалий і дуже надійний захист зовнішньої
-              будівельної деревини.
+              <Trans
+                i18nKey={"additional.list1.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              алкідна високоспеціалізована ґрунтовка <b>KEIM Lignosil®-Base</b>{" "}
-              на основі алкідних смол, містить у своєму складі найдрібніші
-              частинки силікатів, служить для зміцнення поверхні деревини,
-              забезпечує потужне з&apos;єднання основи з фарбою{" "}
-              <b>KEIM Lignosil®-Color</b>.
+              <Trans
+                i18nKey={"additional.list1.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              спеціальний розчинник <b>KEIM Lignosil®-Base DL</b>, при
-              необхідності може бути доданий до <b>KEIM Lignosil®-Base</b> у
-              кількості до 10%.
+              <Trans
+                i18nKey={"additional.list1.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              безбарвне, спеціальне проміжне покриття{" "}
-              <b>KEIM Lignosil®-Scudo</b> може наноситися між шарами{" "}
-              <b>KEIM Lignosil®-Color</b>, що запобігає виходу дубильних та
-              пігментних речовин з деревини на пофарбовану поверхню.
+              <Trans
+                i18nKey={"additional.list1.paragraph4"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силікатне кольорове покриття <b>KEIM Lignosil®-Artis</b>,
-              призначене для креативного оформлення деревини, наноситься як
-              фінішний напівпрозорий шар, що лісує поверх{" "}
-              <b>KEIM Lignosil®-Color</b>.
+              <Trans
+                i18nKey={"additional.list1.paragraph5"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              розріджувач <b>KEIM Lignosil®-Artis DL</b>, додається в{" "}
-              <b>KEIM Lignosil®-Artis</b> з метою отримання бажаного ефекту, що
-              лесує.
+              <Trans
+                i18nKey={"additional.list1.paragraph6"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              силікатна фарба <b>KEIM Lignosil®-Inco</b> для внутрішнього
-              застосування. Може використовуватися як у криючому, так і
-              напівпрозорому варіантах. Абсолютно паропроникна, не порушує
-              природний мікроклімат притаманний приміщенням, внутрішнє
-              оздоблення яких складається з деревини.
+              <Trans
+                i18nKey={"additional.list1.paragraph7"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              розріджувач <b>KEIM Lignosil®-Inco DL</b>, додається в{" "}
-              <b>KEIM Lignosil®-Inco</b> з метою отримання бажаного ефекту
-              лессування.
+              <Trans
+                i18nKey={"additional.list1.paragraph8"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>
@@ -709,22 +789,22 @@ export const ListGenerator = ({ listNumber }: ListGeneratorProps) => {
           </div>
           <div className={"list-generator-content"}>
             <p>
-              2-х компонентна ремонтна паста <b>KEIM Lignosil®-HRP</b> служить
-              для зовнішнього закладення тріщин і глибоких відколів, не містить
-              штучних добавок, чудово переробляється, за фізико-механічними
-              властивостями аналогічна натуральній деревині.
+              <Trans
+                i18nKey={"additional.list2.paragraph1"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              ґрунтовка та рідкий компонент ремонтної пасти{" "}
-              <b>KEIM Lignosil®-HRP-Flüssig</b>, виготовляється на базі
-              спеціально обробленої лляної олії, застосовується для замішування
-              сухого компонента – порошку <b>KEIM Lignosil®-HRP-Pulver</b> та
-              як ґрунтувальний засіб перед нанесенням пасти.
+              <Trans
+                i18nKey={"additional.list2.paragraph2"}
+                components={{ b: <b /> }}
+              />
             </p>
             <p>
-              Сухий компонент <b>KEIM Lignosil®-HRP-Pulver</b> складається з
-              натуральних волокон та мінеральних наповнювачів, є основою пасти{" "}
-              <b>KEIM Lignosil®-HRP</b>.
+              <Trans
+                i18nKey={"additional.list2.paragraph3"}
+                components={{ b: <b /> }}
+              />
             </p>
           </div>
         </>

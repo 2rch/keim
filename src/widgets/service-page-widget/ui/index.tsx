@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { ServiceList } from "./service-list";
 import "./index.scss";
 import { PageTitle } from "../../../shared/ui/page-title";
@@ -10,29 +10,21 @@ export const ServicePageWidget = () => {
     <div className={"service-page-widget"}>
       <PageTitle title={t("service.title")} />
       <div className={"service-page-widget-text"}>
-        Сервіс офіційного представника <b>Keimfarben GmbH</b> в Україні включає:
+        <Trans i18nKey={"service.paragraph1"} components={{ b: <b /> }} />
       </div>
       <ServiceList />
       <div className={"service-page-widget-text"}>
-        Запрошуємо до співпраці Партнерів для просування та розширення ринків
-        збуту продукції <b>Keim®</b> у регіонах України.
+        <Trans i18nKey={"service.paragraph2"} components={{ b: <b /> }} />
       </div>
       <div className={"service-page-widget-text"}>
-        Майбутні <b>Торгові агенти (Freelance sales agent)</b> та{" "}
-        <b>Дилери (Dealers)</b> – до Ваших послуг індивідуальні рішення з
-        урахуванням особливостей регіонального ринку збуту!
+        <Trans i18nKey={"service.paragraph3"} components={{ b: <b /> }} />
       </div>
       <div className={"service-page-widget-text"}>
-        Для врегулювання конфліктних ситуацій, а також компенсації збитків{" "}
-        <b>у результаті діяльності попереднього представника Keim®</b>{" "}
-        виробника Keimfarben GmbH в Україні – <b>до березня 2013 року</b>,
-        просимо Вас звертатися{" "}
+        <Trans i18nKey={"service.paragraph4"} components={{ b: <b /> }} />
         <a href={"mailto:keim@keim.com.ua."}>keim@keim.com.ua.</a>
       </div>
       <div className={"service-page-widget-text"}>
-        Ми сподіваємося, і докладемо всіх зусиль для того, щоб Ваша довіра до{" "}
-        <b>Keim®</b> була відновлена, а співпраця з <b>Keimfarben GmbH</b> була
-        успішною та плідною!
+        <Trans i18nKey={"service.paragraph5"} components={{ b: <b /> }} />
       </div>
     </div>
   );

@@ -13,23 +13,73 @@ import { RockRestorationPage } from "../../pages/rock-restoration-page";
 import { CreativeDesignPage } from "../../pages/creative-design-page";
 import { AdditionalPage } from "../../pages/additional-page";
 import { CataloguePage } from "../../pages/catalogue-page";
+import { SearchPage } from "../../pages/search-page";
+
+export const routes = [
+  {
+    path: "/history",
+    element: <HistoryPage />,
+  },
+  {
+    path: "/advantages",
+    element: <AdvantagesPage />,
+  },
+  {
+    path: "buildings",
+    element: <BuildingsPage />,
+  },
+  {
+    path: "/service",
+    element: <ServicePage />,
+  },
+  {
+    path: "/contacts",
+    element: <ContactsPage />,
+  },
+  {
+    path: "/paint-system",
+    element: <PaintSystemPage />,
+  },
+  {
+    path: "concrete-repair",
+    element: <ConcreteRepairPage />,
+  },
+  {
+    path: "/plaster",
+    element: <PlasterPage />,
+  },
+  {
+    path: "/rock-restoration",
+    element: <RockRestorationPage />,
+  },
+  {
+    path: "/creative-design",
+    element: <CreativeDesignPage />,
+  },
+  {
+    path: "/additional",
+    element: <AdditionalPage />,
+  },
+  {
+    path: "/catalogue",
+    element: <CataloguePage />,
+  },
+  {
+    path: "/search",
+    element: <SearchPage />,
+  },
+  {
+    path: "*",
+    element: <HomePage />,
+  },
+];
 
 export const Routing = () => {
   return (
     <Routes>
-      <Route path={"/history"} element={<HistoryPage />} />
-      <Route path={"/advantages"} element={<AdvantagesPage />} />
-      <Route path={"/buildings"} element={<BuildingsPage />} />
-      <Route path={"/service"} element={<ServicePage />} />
-      <Route path={"/contacts"} element={<ContactsPage />} />
-      <Route path={"/paint-system"} element={<PaintSystemPage />} />
-      <Route path={"/concrete-repair"} element={<ConcreteRepairPage />} />
-      <Route path={"/plaster"} element={<PlasterPage />} />
-      <Route path={"/rock-restoration"} element={<RockRestorationPage />} />
-      <Route path={"/creative-design"} element={<CreativeDesignPage />} />
-      <Route path={"/additional"} element={<AdditionalPage />} />
-      <Route path={"/catalogue"} element={<CataloguePage />} />
-      <Route path={"*"} element={<HomePage />} />
+      {routes.map((route) => (
+        <Route key={route.path} {...route} />
+      ))}
     </Routes>
   );
 };
