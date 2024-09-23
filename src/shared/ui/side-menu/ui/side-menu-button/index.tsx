@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 interface SideMenuButtonProps {
   title: string;
@@ -19,8 +20,8 @@ export const SideMenuButton = ({
     currentLink === link && "selected"
   }`;
   return (
-    <a className={`side-menu-button ${styleClass}`} href={link}>
+    <Link className={`side-menu-button ${styleClass}`} to={link}>
       <div className={"side-menu-button-text"}>{t(title)}</div>
-    </a>
+    </Link>
   );
 };

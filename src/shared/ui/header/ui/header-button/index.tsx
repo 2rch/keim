@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.scss";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 interface HeaderButtonProps {
   title: string;
@@ -19,8 +20,8 @@ export const HeaderButton = ({
     currentLink === link && "selected"
   }`;
   return (
-    <a className={styleClass} href={link}>
+    <Link className={styleClass} to={link}>
       <div className={"header-button-text"}>{t(title)}</div>
-    </a>
+    </Link>
   );
 };

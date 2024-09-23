@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 interface PictureLinkProps {
   img: string;
@@ -9,13 +10,13 @@ interface PictureLinkProps {
 
 export const PictureLink = ({ img, link, placeholder }: PictureLinkProps) => {
   return (
-    <a href={link}>
+    <Link to={link}>
       <img
         className={"picture-link"}
         src={img}
         alt={"Sidemenu Picture"}
         placeholder={placeholder}
       />
-    </a>
+    </Link>
   );
 };

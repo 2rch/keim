@@ -3,6 +3,7 @@ import { searchByString } from "../../lib";
 import { Trans, useTranslation } from "react-i18next";
 import "./index.scss";
 import { routes } from "../../../../app/router";
+import { Link } from "react-router-dom";
 
 interface SearchViewProps {
   search: string;
@@ -34,14 +35,14 @@ export const SearchView = ({ search }: SearchViewProps) => {
       return (
         <div key={translation} className={"search-view-element"}>
           <div className={"search-view-element-header"}>
-            <a href={`/${translationHeader}`}>
+            <Link to={`/${translationHeader}`}>
               {
                 <Trans
                   i18nKey={title}
                   components={{ b: <b />, span: <span /> }}
                 />
               }
-            </a>
+            </Link>
           </div>
           <div
             className={"search-view-element-content"}
