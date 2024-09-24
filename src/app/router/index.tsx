@@ -14,6 +14,7 @@ import { CreativeDesignPage } from "../../pages/creative-design-page";
 import { AdditionalPage } from "../../pages/additional-page";
 import { CataloguePage } from "../../pages/catalogue-page";
 import { SearchPage } from "../../pages/search-page";
+import { useTranslation } from "react-i18next";
 
 export const routes = [
   {
@@ -75,6 +76,11 @@ export const routes = [
 ];
 
 export const Routing = () => {
+  const { t, i18n } = useTranslation();
+  const currentLink = location.pathname.substring(1);
+  document.title = i18n.exists(`${currentLink}.title`)
+    ? t(`${currentLink}.title`)
+    : t("home.title");
   return (
     <Routes>
       {routes.map((route) => (

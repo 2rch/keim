@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 interface BuildingCardProps {
   title: string;
@@ -12,7 +13,7 @@ export const BuildingCard = ({
   img,
   link = null,
 }: BuildingCardProps) => {
-  const titleElement = link ? <a href={link}>{title}</a> : title;
+  const titleElement = link ? <Link to={link}>{title}</Link> : title;
   return (
     <div className={"build-card"}>
       <img className={"build-card-image"} src={img} alt={"Building Image"} />
