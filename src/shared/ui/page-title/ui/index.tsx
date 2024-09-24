@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import clsx from "clsx";
 
 interface PageTitleProps {
   title: string;
@@ -7,5 +8,5 @@ interface PageTitleProps {
 }
 
 export const PageTitle = ({ title, additionalClass = "" }: PageTitleProps) => {
-  return <div className={`page-title ${additionalClass}`}>{title}</div>;
+  return <div className={clsx("page-title", additionalClass)}>{title}</div>;
 };

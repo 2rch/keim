@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import clsx from "clsx";
 
 interface ArticleParagraphProps {
   children: React.ReactNode;
@@ -11,6 +12,6 @@ export const ArticleParagraph = ({
   children,
 }: ArticleParagraphProps) => {
   return (
-    <div className={`article-paragraph ${additionalClass}`}>{children}</div>
+    <div className={clsx("article-paragraph", additionalClass)}>{children}</div>
   );
 };

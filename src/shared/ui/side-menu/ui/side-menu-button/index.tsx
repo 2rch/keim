@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "./index.scss";
 import { Link } from "react-router-dom";
+import clsx from "clsx";
 
 interface SideMenuButtonProps {
   title: string;
@@ -16,9 +17,11 @@ export const SideMenuButton = ({
 }: SideMenuButtonProps) => {
   const { t } = useTranslation();
   const currentLink = window.location.pathname;
-  const styleClass = `header-button ${additionalClass ?? ""} ${
-    currentLink === link && "selected"
-  }`;
+  const styleClass = clsx(
+    "header-button",
+    additionalClass,
+    currentLink === link && "selected",
+  );
   return (
     <Link className={`side-menu-button ${styleClass}`} to={link}>
       <div className={"side-menu-button-text"}>{t(title)}</div>

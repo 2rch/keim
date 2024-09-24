@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+import clsx from "clsx";
 
 interface ArticleTitleProps {
   title: string;
@@ -10,5 +11,5 @@ export const ArticleTitle = ({
   title,
   additionalClass = "",
 }: ArticleTitleProps) => {
-  return <div className={`article-title ${additionalClass}`}>{title}</div>;
+  return <div className={clsx("article-title", additionalClass)}>{title}</div>;
 };
