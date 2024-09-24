@@ -1,9 +1,14 @@
 import React from "react";
-import videoMP4 from "../../../../assets/header/keim.mp4";
-import videoWEBM from "../../../../assets/header/keim.webm";
 import "./index.scss";
 
-export const HeaderVideo = () => {
+interface HeaderVideoProps {
+  sourceList: {
+    src: string;
+    type: string;
+  }[];
+}
+
+const HeaderVideoS = ({ sourceList }: HeaderVideoProps) => {
   return (
     <video
       className={"header-video"}
@@ -15,9 +20,12 @@ export const HeaderVideo = () => {
       controls={false}
       loop={true}
     >
-      <source src={videoMP4} type={"video/mp4"} />
-      <source src={videoWEBM} type={"video/webm"} />
+      {sourceList.map((video) => (
+        <source key={video.src} src={video.src} type={video.type} />
+      ))}
       bgvideo
     </video>
   );
 };
+
+export const HeaderVideo = React.memo(HeaderVideoS);
