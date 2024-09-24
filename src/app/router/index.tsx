@@ -15,6 +15,7 @@ import { AdditionalPage } from "../../pages/additional-page";
 import { CataloguePage } from "../../pages/catalogue-page";
 import { SearchPage } from "../../pages/search-page";
 import { useTranslation } from "react-i18next";
+import { PageLayout } from "../../shared/ui/page-layout";
 
 export const routes = [
   {
@@ -84,7 +85,11 @@ export const Routing = () => {
   return (
     <Routes>
       {routes.map((route) => (
-        <Route key={route.path} {...route} />
+        <Route
+          key={route.path}
+          {...route}
+          element={<PageLayout className={""}>{route.element}</PageLayout>}
+        />
       ))}
     </Routes>
   );
