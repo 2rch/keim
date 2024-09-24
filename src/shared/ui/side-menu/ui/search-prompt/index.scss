@@ -1,4 +1,14 @@
+@import "src/shared/styles/helpers/variables";
+
 .side-menu-search {
   width: 88%;
   margin: 5px;
+  @media screen and (max-width: $medium-screen) {
+    width: 80%;
+    font-size: small;
+  }
+  @media screen and (max-width: $small-screen) {
+    width: 80%;
+    font-size: 8px;
+  }
 }

@@ -15,7 +15,7 @@ export const ContactsPageWidget = () => {
       </div>
       <ContactsBlock />
       <div className={"contacts-page-widget-map"}>
-        <iframe src={mapEmbedLink} width="650" height="400" />
+        <iframe className={"contacts-page-widget-map"} src={mapEmbedLink} />
       </div>
       <div className={"contacts-page-widget-map-link"}>
         <a href={mapLink}>{t("contacts.map-link")}</a>

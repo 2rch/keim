@@ -1,7 +1,28 @@
+@import "src/shared/styles/helpers/variables";
+
 .social-links {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin: 10px;
   width: 93%;
+  @media screen and (max-width: $medium-screen) {
+    gap: 5px;
+    margin: 5px;
+  }
+  @media screen and (max-width: $small-screen) {
+    gap: 5px;
+    margin: 5px;
+  }
+}
+
+.social-link img {
+  @media screen and (max-width: $medium-screen) {
+    width: 20px;
+    height: 20px;
+  }
+  @media screen and (max-width: $small-screen) {
+    width: 20px;
+    height: 20px;
+  }
 }

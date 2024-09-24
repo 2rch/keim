@@ -7,4 +7,14 @@
   width: 200px;
   height: 187px;
   z-index: 1;
+  @media screen and (max-width: $medium-screen) {
+    margin: -100px 5px -18px 0;
+    width: 160px;
+    height: 140px;
+  }
+  @media screen and (max-width: $small-screen) {
+    margin: -40px 5px -18px 0;
+    width: 70px;
+    height: 65px;
+  }
 }

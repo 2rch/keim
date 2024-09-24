@@ -13,4 +13,12 @@
   flex: 0 0 31%;
   width: 100%;
   border: 1px solid $accent-color;
+  @media screen and (max-width: $medium-screen) {
+    flex: 0 0 29.5%;
+    height: 170px;
+  }
+  @media screen and (max-width: $small-screen) {
+    flex: 0 0 29.5%;
+    height: 100px;
+  }
 }

@@ -6,6 +6,18 @@
   margin-right: auto;
   min-height: 100vh;
   width: 50%;
+  @media screen and (max-width: $x-medium-screen) {
+    font-size: medium;
+    width: 70%;
+  }
+  @media screen and (max-width: $medium-screen) {
+    font-size: small;
+    width: 80%;
+  }
+  @media screen and (max-width: $small-screen) {
+    font-size: 7px;
+    width: 100%;
+  }
 }
 
 .page-wrapper {
