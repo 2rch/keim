@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { lastMenuItem, menuItems, menuPicture } from "../config";
+import { lastMenuItem, menuItems, menuPicture, socialLinks } from "../config";
 import { SideMenuButton } from "./side-menu-button";
 import "./index.scss";
 import { SearchPrompt } from "./search-prompt";
 import { useNavigate } from "react-router-dom";
 import { PictureLink } from "./picture-link";
 import { useTranslation } from "react-i18next";
+import { SocialLinks } from "./social-links";
 
 export const SideMenu = () => {
   const { t } = useTranslation();
@@ -30,6 +31,7 @@ export const SideMenu = () => {
         placeholder={t(menuPicture.placeholder)}
       />
       <SideMenuButton key={lastMenuItem.title} {...lastMenuItem} />
+      <SocialLinks socialLinks={socialLinks} />
     </div>
   );
 };

@@ -1,4 +1,6 @@
 import menuImage from "../../../assets/side-menu/img.png";
+import facebookImage from "../../../assets/social-media/fb.png";
+import instagramImage from "../../../assets/social-media/instagram.png";
 
 export const menuItems = [
   {
@@ -41,3 +43,14 @@ export const lastMenuItem = {
   title: "sidemenu.tech",
   link: "https://www.youtube.com/watch?v=RCxBsFk3x6I&feature=youtu.be",
 };
+
+export const socialLinks = [
+  {
+    link: "https://www.facebook.com/keimukraine/?fref=ts",
+    img: facebookImage,
+  },
+  {
+    link: "https://www.instagram.com/keim_in_ukraine/",
+    img: instagramImage,
+  },
+];
