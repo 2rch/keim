@@ -1,11 +1,6 @@
 import React from "react";
-import { PageLayout } from "../../shared/ui/page-layout";
-import { HistoryPageWidget } from "../../widgets/history-page-widget/ui";
+import { HistoryPageWidget } from "../../widgets/history-page-widget";
 
 export const HistoryPage = () => {
-  return (
-    <PageLayout className={"history-page"}>
-      <HistoryPageWidget />
-    </PageLayout>
-  );
+  return <HistoryPageWidget />;
 };
